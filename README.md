@@ -74,8 +74,7 @@ weighted avg       0.51      0.55      0.45      4092
 
 Conclusion:
 
-The provided SVM model generated an accuracy score of 55% and a high recall score (96%) when buying but a low recall score (4%) when selling. This indicates the model performs extremely well when determining when to enter a position. Adjusting  the short SMA window to 8 from 4 and the long SMA window to 110 from 100 as well as the size of Training Data to 6 months did not have meaningful impact than that of the original baseline's. Accuracy score are almost the same but the recall for selling (-1) decreased indicating the tuned model missed a lot of relevant data points than the original.
-The AdaBoost model performed slightly better in the selling position but not significantly and even dipped in recall when determining when to buy.
+The provided SVM model generated an accuracy score of 55% and a high recall score (96%) when buying but a low recall score (4%) when selling. This indicates the model performs very well when determining when to enter a buying position. Adjusting  the short SMA window to 8 from 4 and the long SMA window to 110 from 100 as well as the size of Training Data to 6 months to fine-tune the baseline proved to be even better at buying than the original having scored an almost perfect score of .99. It performed badly when predicting to sell compared to the original. Still, I would recommend the tuned model to the investors as it better protects them from losing money by being really good at picking buying positions. The AdaBoost model performed slightly better in the selling position but not significantly and even dipped in recall when determining when to buy.
 
 
 
